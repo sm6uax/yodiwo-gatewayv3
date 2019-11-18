@@ -1,0 +1,12 @@
+[Unit]
+Description=Yodiwo Gateway
+
+[Service]
+WorkingDirectory=/opt/yodiwo-gatewayv3/packet_forwarder/lora_pkt_fwd/
+ExecStart=/opt/yodiwo-gatewayv3/packet_forwarder/lora_pkt_fwd/start.sh
+SyslogIdentifier=yodiwo-gateway
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
